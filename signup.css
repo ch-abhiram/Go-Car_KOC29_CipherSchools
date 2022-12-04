@@ -1,0 +1,149 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color:#fe5b3d;
+    --second-color:#ffac38;
+    --text-color:#444;
+    --gradient: linear-gradient(#fe5b3d,#ffac38);
+}
+section{
+    padding: 50px 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 100px;
+}
+.logo img{
+    width: 40px;
+}
+.header-btn a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.header-btn .sign-in{
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.header-btn .login{
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.header-btn .booking{
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.header-btn .locations{
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.sign-in:hover,.login:hover,.locations:hover,.booking:hover{
+    background: var(--main-color);
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(img/Car\ Website\ –\ 1@2x.png);
+    background-repeat:no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.text h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+.text span{
+    color: var(--main-color);
+}
+/* .form-container form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 100px;
+    background: #fff;
+    padding: 6px;
+    border-radius: 0.5rem; */
+
+/* } */
+.form-container form{
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 10rem;
+    left: 13rem;
+    background: #fff;
+    padding: 6px;
+    border-radius: 0.5rem;
+    
+    width:25%;
+    box-shadow: inset;
+    
+}
+.input-box{
+    flex: 1 1 7em;
+    display:grid;
+    flex-direction:column;
+    padding-left: 0.2rem;
+    padding-right: 1rem;
+
+}
+.input-box span{
+    font-weight: 1000;
+    color:var(--text-color);
+}
+.input-box input{
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: #ebecf0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+
+}
+.form-container form .btn{
+    flex: 1 1 7rem;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #474fa0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.form-container form .btn:hover{
+    background: var(--main-color);
+}
+.form-container h1{
+    text-align: center;
+    color: var(--main-color);
+}
